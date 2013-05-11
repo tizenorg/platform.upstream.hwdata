@@ -1,3 +1,6 @@
+* Sat May 11 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130509.180414@c5a2857
+- Set license using %license
+
 * Tue Mar 05 2013 Anas Nashif <anas.nashif@intel.com> upstream/0.234@6d1f3fe
 - Update hw databases
 

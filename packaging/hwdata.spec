@@ -27,6 +27,7 @@ cp %{S:1} %{buildroot}%{_datadir}/hwdata
 cp %{S:2} %{buildroot}%{_datadir}/hwdata
 
 %files
+%license COPYING
 %config(noreplace) %{_sysconfdir}/modprobe.d/blacklist.conf
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
