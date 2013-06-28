@@ -10,6 +10,7 @@ BuildArch:      noarch
 Provides:	pciutils-ids
 Source1:	pci.ids
 Source2:	usb.ids
+Source1001: 	hwdata.manifest
 
 %description
 hwdata contains various hardware identification and configuration data,
@@ -17,6 +18,7 @@ such as the pci.ids database and MonitorsDb databases.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 # nothing to build
@@ -27,6 +29,7 @@ cp %{S:1} %{buildroot}%{_datadir}/hwdata
 cp %{S:2} %{buildroot}%{_datadir}/hwdata
 
 %files
+%manifest %{name}.manifest
 %license COPYING
 %config(noreplace) %{_sysconfdir}/modprobe.d/blacklist.conf
 %dir %{_datadir}/%{name}
