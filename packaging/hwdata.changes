@@ -1,3 +1,8 @@
+* Thu Sep 12 2013 Michael Ikey Doherty <michael.i.doherty@intel.com> accepted/tizen/20130912.200042@6aa8832
+- Enable the Intel framebuffer driver to correct Plymouth functionality
+- resetting manifest requested domain to floor
+- Set license using %license
+
 * Sat May 11 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130509.180414@c5a2857
 - Set license using %license
 
