@@ -21,8 +21,8 @@ install:
 	for foo in $(FILES) ; do \
 		install -m 644 $$foo $(DESTDIR)$(datadir)/$(NAME) ;\
 	done
-	mkdir -p -m 755 $(DESTDIR)$(prefix)/lib/modprobe.d
-	install -m 644 -T blacklist.conf $(DESTDIR)$(prefix)/lib/modprobe.d/dist-blacklist.conf
+	mkdir -p -m 755 $(DESTDIR)$(libdir)/modprobe.d
+	install -m 644 -T blacklist.conf $(DESTDIR)$(libdir)/modprobe.d/dist-blacklist.conf
 
 commit:
 	git commit -a ||:
