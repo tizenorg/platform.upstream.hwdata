@@ -1,3 +1,6 @@
+* Mon Jan 20 2014 Łukasz Stelmach <l.stelmach@samsung.com> upstream/0.260@aa7148e
+- Import upstream version 0.260
+
 * Thu Sep 12 2013 Michael Ikey Doherty <michael.i.doherty@intel.com> accepted/tizen/20130912.200042@6aa8832
 - Enable the Intel framebuffer driver to correct Plymouth functionality
 - resetting manifest requested domain to floor
