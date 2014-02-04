@@ -1,3 +1,6 @@
+* Tue Feb 04 2014 Patrick McCarty <patrick.mccarty@linux.intel.com> 9c6cbfb
+- Disable i8042 autoprobe; the init adds significantly to IVI boot time (TIVI-2291)
+
 * Mon Jan 20 2014 Łukasz Stelmach <l.stelmach@samsung.com> upstream/0.260@aa7148e
 - Import upstream version 0.260
 
