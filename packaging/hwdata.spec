@@ -17,11 +17,10 @@ such as the pci.ids database and MonitorsDb databases.
 
 %prep
 %setup -q -n hwdata-%{version}-1
-%configure
 cp %{SOURCE1001} .
 
 %build
-# nothing to build
+%configure
 
 %install
 %make_install
