@@ -11,7 +11,7 @@ BuildArch:      noarch
 Provides:	pciutils-ids
 Source1001: 	hwdata.manifest
 
-%package -n ivi
+%package ivi
 Summary:  IVI platform specific configurations files
 Requires: %{name}
 
@@ -19,7 +19,7 @@ Requires: %{name}
 %description 
 This package contains various platform specific configuration files.
 
-%description -n ivi
+%description ivi
 This package contains various IVI specific configuration files.
 
 %prep
@@ -47,5 +47,5 @@ install -m644 video.conf %{buildroot}/%{_sysconfdir}/modprobe.d
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
 
-%files -n ivi
+%files -n hwdata-ivi
 %config %{_sysconfdir}/modprobe.d/video.conf
