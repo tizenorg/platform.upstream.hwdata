@@ -19,7 +19,7 @@ Requires: %{name}
 %description 
 This package contains various platform specific configuration files.
 
-%description -n hwdata-ivi
+%description -n ivi
 This package contains various IVI specific configuration files.
 
 %prep
@@ -47,5 +47,5 @@ install -m644 video.conf %{buildroot}/%{_sysconfdir}/modprobe.d
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
 
-%files -n hwdata-ivi
+%files -n ivi
 %config %{_sysconfdir}/modprobe.d/video.conf
