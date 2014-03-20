@@ -11,13 +11,13 @@ BuildArch:      noarch
 Provides:	pciutils-ids
 Source1001: 	hwdata.manifest
 
-%package -n hwdata-ivi
+%package -n ivi
 Summary:  IVI platform specific configurations files
 Requires: %{name}
 
 
 %description 
-This package contains various platform specific configuration files. 
+This package contains various platform specific configuration files.
 
 %description -n hwdata-ivi
 This package contains various IVI specific configuration files.
