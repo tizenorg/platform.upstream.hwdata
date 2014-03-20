@@ -11,9 +11,16 @@ BuildArch:      noarch
 Provides:	pciutils-ids
 Source1001: 	hwdata.manifest
 
-%description
-hwdata contains various hardware identification and configuration data,
-such as the pci.ids database and MonitorsDb databases.
+%package -n hwdata-ivi
+Summary:  IVI platform specific configurations files
+Requires: %{name}
+
+
+%description 
+This package contains various platform specific configuration files. 
+
+%description -n hwdata-ivi
+This package contains various IVI specific configuration files.
 
 %prep
 %setup -q -n hwdata-%{version}-1
@@ -29,6 +36,9 @@ cp %{SOURCE1001} .
 mv %{buildroot}%{_libdir}/modprobe.d/dist-blacklist.conf \
    %{buildroot}%{_sysconfdir}/modprobe.d/blacklist.conf
 rm -rf %{buildroot}%{_libdir}
+install -m644 blacklist.conf %{buildroot}/%{_sysconfdir}/modprobe.d
+install -m644 video.conf %{buildroot}/%{_sysconfdir}/modprobe.d
+
 
 %files
 %manifest %{name}.manifest
@@ -36,3 +46,6 @@ rm -rf %{buildroot}%{_libdir}
 %config(noreplace) %{_sysconfdir}/modprobe.d/blacklist.conf
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
+
+%files -n hwdata-ivi
+%config %{_sysconfdir}/modprobe.d/video.conf
