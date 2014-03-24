@@ -33,11 +33,13 @@ cp %{SOURCE1001} .
 %install
 %make_install
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/modprobe.d
+%{__mkdir_p} %{buildroot}%{_sysconfdir}/udev/rules
 mv %{buildroot}%{_libdir}/modprobe.d/dist-blacklist.conf \
    %{buildroot}%{_sysconfdir}/modprobe.d/blacklist.conf
 rm -rf %{buildroot}%{_libdir}
 install -m644 blacklist.conf %{buildroot}/%{_sysconfdir}/modprobe.d
 install -m644 video.conf %{buildroot}/%{_sysconfdir}/modprobe.d
+install -m644 70-tun.rules %{buildroot}/%{_sysconfdir}/udev/rules
 
 
 %files
@@ -49,3 +51,4 @@ install -m644 video.conf %{buildroot}/%{_sysconfdir}/modprobe.d
 
 %files ivi
 %config(noreplace)%{_sysconfdir}/modprobe.d/video.conf
+%config(noreplace)%{_sysconfdir}/udev/rules/70-tun.rules
