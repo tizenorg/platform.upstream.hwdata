@@ -1,0 +1,10 @@
+Code-Review+2: Ulf Hofemeier <ulf.hofemeier@linux.intel.com>
+Verified+1: Ulf Hofemeier <ulf.hofemeier@linux.intel.com>
+Code-Review+1: Patrick McCarty <patrick.mccarty@linux.intel.com>
+Code-Review+1: Jin Song <jin.kyu.song@linux.intel.com>
+Verified+1: Jin Song <jin.kyu.song@linux.intel.com>
+Submitted-by: Ulf Hofemeier <ulf.hofemeier@linux.intel.com>
+Submitted-at: Wed, 26 Mar 2014 08:06:19 -0700
+Reviewed-on: https://review.tizen.org/gerrit/18409
+Project: platform/upstream/hwdata
+Branch: refs/heads/tizen
